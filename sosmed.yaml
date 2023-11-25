@@ -16,3 +16,16 @@ proxies:
       path: /worryfree
       headers:
         Host: v2ray1.udpgw.com
+  - name: krnrn
+    server: 104.18.2.2
+    port: 443
+    type: trojan
+    password: c60c8ba0-8b9e-11ee-9e59-1239d0255272
+    skip-cert-verify: true
+    sni: sg-2.test3.net
+    network: ws
+    ws-opts:
+      path: /howdy
+      headers:
+        Host: sg-2.test3.net
+    udp: true    
