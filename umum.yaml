@@ -1,0 +1,18 @@
+proxies:
+#========= Vmess WS =========
+  - name: zero_hidessh
+    type: vmess
+    server: 104.18.2.2
+    port: 80
+    uuid: zero_hidessh
+    alterId: 0
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+    tls: false
+    servername: sgd-viprext.my.id
+    network: ws
+    ws-opts:
+      path: "/vmess"
+      headers:
+        Host: sgd-viprext.my.id
