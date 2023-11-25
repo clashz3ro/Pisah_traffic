@@ -1,0 +1,18 @@
+proxies:
+#========= Vmess WS =========
+  - name: v2ray1.udpgw.com
+    server: 104.18.2.2
+    port: 443
+    type: vmess
+    uuid: ffb391b7-c57e-4ee2-a5e7-ac12eb9d7241
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: v2ray1.udpgw.com
+    alterId: 0
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: v2ray1.udpgw.com
