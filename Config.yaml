@@ -1,36 +1,41 @@
 ---
 proxy-providers:
   Gaming:
-    type: file
+    type: http
+    url: "https://raw.githubusercontent.com/clashz3ro/Pisah_traffic/main/gaming.yaml"
     path: "./proxy_provider/gaming.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 120
   Sosmed:
-    type: file
+    type: http
+    url: "https://raw.githubusercontent.com/clashz3ro/Pisah_traffic/main/sosmed.yaml"
     path: "./proxy_provider/sosmed.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 120
   Streaming:
-    type: file
+    type: http
+    url: "http://fool.azurewebsites.net/get?limit=10&format=clash&cc=SG,ID&cdn=104.18.2.2&network=ws&arg=xudp,key:value&mode=cdn&pass=qk4ndl7g"
     path: "./proxy_provider/streaming.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 120
   Umum:
-    type: file
+    type: http
+    url: "https://raw.githubusercontent.com/clashz3ro/Pisah_traffic/main/umum.yaml"
     path: "./proxy_provider/umum.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
       interval: 120
   trafficIndo:
-    type: file
-    path: "./proxy_provider/trafficIndo.yaml"
+    type: http
+    url: "https://raw.githubusercontent.com/clashz3ro/Pisah_traffic/main/trafficindo.yaml"
+    path: "./proxy_provider/trafficindo.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
