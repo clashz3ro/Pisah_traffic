@@ -1,0 +1,50 @@
+proxies:
+#========= Vmess WS =========
+  - name: zero_hidessh
+    type: vmess
+    server: 104.18.2.2
+    port: 80
+    uuid: zero_hidessh
+    alterId: 0
+    cipher: auto
+    udp: true
+    skip-cert-verify: true
+    tls: false
+    servername: sgd-viprext.my.id
+    network: ws
+    ws-opts:
+      path: "/vmess"
+      headers:
+        Host: sgd-viprext.my.id
+  - name: v2ray1.udpgw.com
+    server: 104.18.2.2
+    port: 443
+    type: vmess
+    uuid: ffb391b7-c57e-4ee2-a5e7-ac12eb9d7241
+    cipher: auto
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    network: ws
+    servername: v2ray1.udpgw.com
+    alterId: 0
+    ws-opts:
+      path: /worryfree
+      headers:
+        Host: v2ray1.udpgw.com
+  - name: SG+VMESS-WS NTLS(2023-12-01)
+    server: 104.18.2.2
+    port: 80
+    type: vmess
+    uuid: 8ccb2ad0-8a2e-11ee-ad21-1239d0255272
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: sg3.socifiles.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: sg3.socifiles.com
+    udp: true
