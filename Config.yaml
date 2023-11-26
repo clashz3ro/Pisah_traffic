@@ -34,8 +34,8 @@ proxy-providers:
       interval: 120
   trafficIndo:
     type: http
-    url: "https://raw.githubusercontent.com/clashz3ro/Pisah_traffic/main/trafficindo.yaml"
-    path: "./proxy_provider/trafficindo.yaml"
+    url: "https://raw.githubusercontent.com/clashz3ro/Pisah_traffic/main/trafficIndo.yaml"
+    path: "./proxy_provider/trafficIndo.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
